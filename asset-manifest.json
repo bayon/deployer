@@ -1,14 +1,14 @@
 {
-  "main.css": "/bayon/deployer/static/css/main.c873ba6c.chunk.css",
-  "main.js": "/bayon/deployer/static/js/main.9acab3e7.chunk.js",
-  "main.js.map": "/bayon/deployer/static/js/main.9acab3e7.chunk.js.map",
-  "static/js/1.2dd891c4.chunk.js": "/bayon/deployer/static/js/1.2dd891c4.chunk.js",
-  "static/js/1.2dd891c4.chunk.js.map": "/bayon/deployer/static/js/1.2dd891c4.chunk.js.map",
-  "runtime~main.js": "/bayon/deployer/static/js/runtime~main.eba354f1.js",
-  "runtime~main.js.map": "/bayon/deployer/static/js/runtime~main.eba354f1.js.map",
-  "static/media/logo.svg": "/bayon/deployer/static/media/logo.5d5d9eef.svg",
-  "static/css/main.c873ba6c.chunk.css.map": "/bayon/deployer/static/css/main.c873ba6c.chunk.css.map",
-  "index.html": "/bayon/deployer/index.html",
-  "precache-manifest.255e8fe07849c1e020a5639d72103168.js": "/bayon/deployer/precache-manifest.255e8fe07849c1e020a5639d72103168.js",
-  "service-worker.js": "/bayon/deployer/service-worker.js"
+  "main.css": "/deployer/static/css/main.c873ba6c.chunk.css",
+  "main.js": "/deployer/static/js/main.9edadb09.chunk.js",
+  "main.js.map": "/deployer/static/js/main.9edadb09.chunk.js.map",
+  "static/js/1.2dd891c4.chunk.js": "/deployer/static/js/1.2dd891c4.chunk.js",
+  "static/js/1.2dd891c4.chunk.js.map": "/deployer/static/js/1.2dd891c4.chunk.js.map",
+  "runtime~main.js": "/deployer/static/js/runtime~main.99e55fd0.js",
+  "runtime~main.js.map": "/deployer/static/js/runtime~main.99e55fd0.js.map",
+  "static/media/logo.svg": "/deployer/static/media/logo.5d5d9eef.svg",
+  "static/css/main.c873ba6c.chunk.css.map": "/deployer/static/css/main.c873ba6c.chunk.css.map",
+  "index.html": "/deployer/index.html",
+  "precache-manifest.38bd1e90378a6236bec048dc3f32200d.js": "/deployer/precache-manifest.38bd1e90378a6236bec048dc3f32200d.js",
+  "service-worker.js": "/deployer/service-worker.js"
 }
