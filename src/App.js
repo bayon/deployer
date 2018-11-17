@@ -12,16 +12,12 @@ class App extends Component {
     this.handleClick = this.handleClick.bind(this)
   }
   /*
-  handleClick () {
-    console.log('Success!')
-    axios.get('https://api.github.com/users/bayon')
-    .then(response =>  this.setState({username: response.data.name}))
-     
+ http://www.forteworks.com/api/contacts_server.php
   }*/
   handleClick () {
     console.log('Success!')
-    axios.get('https://api.github.com/users/bayon')
-    .then(response =>  this.setState({username: response.data.name}))
+    axios.get('http://www.forteworks.com/api/contacts_server.php')
+    .then(response =>  console.log(response.data))
      
   }
   render() {
@@ -32,8 +28,8 @@ class App extends Component {
           <p>https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d</p>
         </header>
         <div className='button__container'>
-        <button className='button'  onClick={this.handleClick}>Click Me</button>
-        <p>{this.state.username}</p>
+        <button className='button'  onClick={this.handleClick}>Click See Console</button>
+         
       </div>
       </div>
     );
