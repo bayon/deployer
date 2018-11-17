@@ -27,7 +27,14 @@ class App extends Component {
               </li>
            )}
          </pre>
-  
+         <pre>
+           {this.state.data.map((data,i) => 
+              <li key={i} className="myList">
+                {i+1}. {data.contact_name}
+                
+              </li>
+           )}
+         </pre>
   
   
   */
@@ -38,7 +45,8 @@ class App extends Component {
      
   }
   render() {
-    let data = this.state.data;
+    //let data = this.state.data;
+    let datas = JSON.parse(this.state.data);
     return (
       <div className="App">
         <header className="App-header">
@@ -48,16 +56,19 @@ class App extends Component {
         <div className='button__container'>
         <button className='button'  onClick={this.handleClick}>See Data</button>
        <h2>http data:</h2>
-
        <pre>
-           {this.state.data.map((data,i) => 
+           {datas.map((data,i) => 
               <li key={i} className="myList">
                 {i+1}. {data.contact_name}
                 
               </li>
            )}
          </pre>
+
         <p>{this.state.data}</p>
+        <hr>
+        </hr>
+        <p>{datas}</p>
    </div>
       </div>
     );
