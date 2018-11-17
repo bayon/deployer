@@ -25,6 +25,7 @@ class App extends Component {
      
   }
   render() {
+    let data = this.state.data;
     return (
       <div className="App">
         <header className="App-header">
@@ -34,7 +35,16 @@ class App extends Component {
         <div className='button__container'>
         <button className='button'  onClick={this.handleClick}>See Data</button>
        <h2>http data:</h2>
-        <p>{this.state.data}</p>
+       
+        <pre>
+           {data.map((row,i) => 
+              <li key={i} className="myList">
+                {i+1}. {row.id} , {row.contact_name}
+                
+              </li>
+           )}
+         </pre>
+         <p>{this.state.data}</p>
       </div>
       </div>
     );
