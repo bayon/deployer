@@ -17,14 +17,28 @@ class App extends Component {
  console.log(response.data)
  http://www.forteworks.com/api/contacts_server.php
  axios.get('https://dog.ceo/api/breeds/image/random')
-  }*/
+  }
+  
+   <pre>
+           {this.state.data.map((data,i) => 
+              <li key={i} className="myList">
+                {i+1}. {data.contact_name}  
+                 
+              </li>
+           )}
+         </pre>
+  
+  
+  
+  */
   handleClick () {
     //console.log('Success!')
     axios.get('http://www.forteworks.com/api/contacts_server.php')
-    .then(response =>  this.setState({data: response.data}))
+    .then(response =>  this.setState({data: response}))
      
   }
   render() {
+    let data = this.state.data;
     return (
       <div className="App">
         <header className="App-header">
@@ -34,6 +48,7 @@ class App extends Component {
         <div className='button__container'>
         <button className='button'  onClick={this.handleClick}>See Data</button>
        <h2>http data:</h2>
+
        <pre>
            {this.state.data.map((data,i) => 
               <li key={i} className="myList">
@@ -43,7 +58,7 @@ class App extends Component {
            )}
          </pre>
         <p>{this.state.data}</p>
-      </div>
+   </div>
       </div>
     );
   }
