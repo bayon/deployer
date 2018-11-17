@@ -31,7 +31,7 @@ class App extends Component {
         </header>
         <div className='button__container'>
         <button className='button'  onClick={this.handleClick}>Click See Console</button>
-        <img src="{this.state.data.message}" height="200px" width="auto" ></img>
+        <img src={this.state.data.message} height="200px" width="auto" alt="a dog." ></img>
       </div>
       </div>
     );
