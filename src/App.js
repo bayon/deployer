@@ -30,7 +30,7 @@ class App extends Component {
           <p>https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d</p>
         </header>
         <div className='button__container'>
-        <button className='button'  onClick={this.handleClick}>Click See Console</button>
+        <button className='button'  onClick={this.handleClick}>See A Dog</button>
         <img src={this.state.data.message} height="200px" width="auto" alt="a dog." ></img>
       </div>
       </div>
