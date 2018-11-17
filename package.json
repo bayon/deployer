@@ -2,7 +2,7 @@
   "name": "deployer",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://github.com/bayon/deployer/",
+  "homepage":"https://bayon.github.io/deployer/",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.3",
