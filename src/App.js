@@ -48,7 +48,7 @@ class App extends Component {
   */
   handleClick () {
     //console.log('Success!')
-    axios.get('http://www.forteworks.com/api/contacts_server.php')
+    axios.get('http://www.forteworks.com/api/simple-api.php/contacts/')
     .then(response =>  this.setState({data: response}))
      
   }
