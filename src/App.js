@@ -51,8 +51,8 @@ class App extends Component {
 
       
         
-         <p>{this.state.data}</p>
-         {console.log(this.state.data)}
+         <p>{data}</p>
+         
       </div>
       </div>
     );
