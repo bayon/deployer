@@ -35,6 +35,14 @@ class App extends Component {
               </li>
            )}
          </pre>
+         <pre>
+           {datas.map((data,i) => 
+              <li key={i} className="myList">
+                {i+1}. {data.contact_name}
+                
+              </li>
+           )}
+         </pre>
   
   
   */
@@ -56,14 +64,7 @@ class App extends Component {
         <div className='button__container'>
         <button className='button'  onClick={this.handleClick}>See Data</button>
        <h2>http data:</h2>
-       <pre>
-           {datas.map((data,i) => 
-              <li key={i} className="myList">
-                {i+1}. {data.contact_name}
-                
-              </li>
-           )}
-         </pre>
+       
 
         <p>{this.state.data}</p>
         <hr>
