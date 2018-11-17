@@ -17,7 +17,20 @@ class App extends Component {
  console.log(response.data)
  http://www.forteworks.com/api/contacts_server.php
  axios.get('https://dog.ceo/api/breeds/image/random')
-  }*/
+  }
+  
+   <pre>
+           {this.state.data.map((data,i) => 
+              <li key={i} className="myList">
+                {i+1}. {data.contact_name}  
+                 
+              </li>
+           )}
+         </pre>
+  
+  
+  
+  */
   handleClick () {
     //console.log('Success!')
     axios.get('http://www.forteworks.com/api/contacts_server.php')
@@ -36,16 +49,10 @@ class App extends Component {
         <button className='button'  onClick={this.handleClick}>See Data</button>
        <h2>http data:</h2>
 
-       <pre>
-           {this.state.data.map((data,i) => 
-              <li key={i} className="myList">
-                {i+1}. {data.contact_name}  
-                 
-              </li>
-           )}
-         </pre>
+      
         
          <p>{this.state.data}</p>
+         {console.log(this.state.data)}
       </div>
       </div>
     );
