@@ -37,9 +37,9 @@ class App extends Component {
        <h2>http data:</h2>
        
         <pre>
-           {data.map((row,i) => 
+           {data.map((_data,i) => 
               <li key={i} className="myList">
-                {i+1}. {row.id} , {row.contact_name}
+                {i+1}. {_data.id} , {_data.contact_name}
                 
               </li>
            )}
