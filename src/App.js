@@ -37,10 +37,8 @@ class App extends Component {
        <pre>
            {this.state.data.map((data,i) => 
               <li key={i} className="myList">
-                {i+1}. {data.name} , {data.address}
-                <button onClick = {()=>this.fRemove(i)} className="myListButton">remove</button>
-                <button onClick = {()=>this.fEdit(i)} className="myListButton">edit</button>
-
+                {i+1}. {data.contact_name}
+                
               </li>
            )}
          </pre>
