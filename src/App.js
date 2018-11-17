@@ -54,7 +54,7 @@ class App extends Component {
   }
   render() {
     //let data = this.state.data;
-    let datas = JSON.parse(this.state.data);
+    //let datas = JSON.parse(this.state.data);
     return (
       <div className="App">
         <header className="App-header">
@@ -69,7 +69,7 @@ class App extends Component {
         <p>{this.state.data}</p>
         <hr>
         </hr>
-        <p>{datas}</p>
+         
    </div>
       </div>
     );
