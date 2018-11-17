@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+ 
 import './App.css';
 import axios from 'axios'
 
@@ -13,11 +13,12 @@ class App extends Component {
   }
   /*
  http://www.forteworks.com/api/contacts_server.php
+ <img src="{this.state.data.message}" height="200px" width="auto" />
   }*/
   handleClick () {
     //console.log('Success!')
     axios.get('https://dog.ceo/api/breeds/image/random')
-    .then(response =>  this.setState({data: response.data}))
+    .then(response =>  console.log(response.data))
      
   }
   render() {
@@ -29,7 +30,7 @@ class App extends Component {
         </header>
         <div className='button__container'>
         <button className='button'  onClick={this.handleClick}>Click See Console</button>
-        <img src="{this.state.data.message}" height="200px" width="auto" />
+         
       </div>
       </div>
     );
