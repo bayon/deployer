@@ -7,7 +7,7 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
-      username: ''
+      data: []
     }
     this.handleClick = this.handleClick.bind(this)
   }
@@ -15,9 +15,9 @@ class App extends Component {
  http://www.forteworks.com/api/contacts_server.php
   }*/
   handleClick () {
-    console.log('Success!')
-    axios.get('http://www.forteworks.com/api/contacts_server.php')
-    .then(response =>  console.log(response.data))
+    //console.log('Success!')
+    axios.get('https://dog.ceo/api/breeds/image/random')
+    .then(response =>  this.setState({data: response.data}))
      
   }
   render() {
@@ -29,7 +29,7 @@ class App extends Component {
         </header>
         <div className='button__container'>
         <button className='button'  onClick={this.handleClick}>Click See Console</button>
-         
+        <img src="{this.state.data.message}" height="200px" width="auto" />
       </div>
       </div>
     );
