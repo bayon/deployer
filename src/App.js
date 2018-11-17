@@ -35,15 +35,16 @@ class App extends Component {
         <div className='button__container'>
         <button className='button'  onClick={this.handleClick}>See Data</button>
        <h2>http data:</h2>
-       
-        <pre>
-           {data.map((_data,i) => 
+
+       <pre>
+           {this.state.data.map((data,i) => 
               <li key={i} className="myList">
-                {i+1}. {_data.id} , {_data.contact_name}
-                
+                {i+1}. {data.contact_name}  
+                 
               </li>
            )}
          </pre>
+        
          <p>{this.state.data}</p>
       </div>
       </div>
