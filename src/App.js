@@ -15,10 +15,12 @@ class App extends Component {
  http://www.forteworks.com/api/contacts_server.php
  <img src="{this.state.data.message}" height="200px" width="auto" />
  console.log(response.data)
+ http://www.forteworks.com/api/contacts_server.php
+ axios.get('https://dog.ceo/api/breeds/image/random')
   }*/
   handleClick () {
     //console.log('Success!')
-    axios.get('https://dog.ceo/api/breeds/image/random')
+    axios.get('http://www.forteworks.com/api/contacts_server.php')
     .then(response =>  this.setState({data: response.data}))
      
   }
@@ -30,8 +32,9 @@ class App extends Component {
           <p>https://codeburst.io/deploy-react-to-github-pages-to-create-an-amazing-website-42d8b09cd4d</p>
         </header>
         <div className='button__container'>
-        <button className='button'  onClick={this.handleClick}>See A Dog</button>
-        <img src={this.state.data.message} height="200px" width="auto" alt="a dog." ></img>
+        <button className='button'  onClick={this.handleClick}>See Data</button>
+       <h2>http data:</h2>
+        <p>{this.state.data}</p>
       </div>
       </div>
     );
